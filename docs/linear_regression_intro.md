@@ -50,7 +50,7 @@ $$
 Vector/matrix form (for $X \in \mathbb{R}^{m\times n}$ with rows $(x^{(i)})^\top$ and $\hat{y} = Xw + b\,\mathbf{1}$):
 
 $$
-\nabla_w J = \frac{1}{m} X^\top (\hat{y} - y), \quad \frac{\partial J}{\partial b} = \frac{1}{m} \mathbf{1}^\top (\hat{y} - y).
+J = \frac{1}{m} X^\top (\hat{y} - y), \quad \frac{\partial J}{\partial b} = \frac{1}{m} \mathbf{1}^\top (\hat{y} - y).
 $$
 
 ## Gradient Descent
