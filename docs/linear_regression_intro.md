@@ -47,11 +47,7 @@ $$
 \end{aligned}
 $$
 
-Vector/matrix form (for $X \in \mathbb{R}^{m\times n}$ with rows $(x^{(i)})^\top$ and $\hat{y} = Xw + b\,\mathbf{1}$):
-
-$$
-\nabla_w J = \frac{1}{m} X^\top (\hat{y} - y), \quad \frac{\partial J}{\partial b} = \frac{1}{m} \mathbf{1}^\top (\hat{y} - y).
-$$
+For multivariate case with $X \in \mathbb{R}^{m\times n}$ (rows $(x^{(i)})^\top$) and $\hat{y} = Xw + b\,\mathbf{1}$, the derivatives generalize to matrix form.
 
 ## Gradient Descent
 Gradient descent is an iterative optimization algorithm that updates parameters in the direction of the negative gradient to reduce the cost.
