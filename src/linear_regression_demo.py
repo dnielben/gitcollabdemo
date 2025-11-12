@@ -103,7 +103,7 @@ def save_plots(x, y, w, b, cost_history, out_dir):
 
     # Plot cost history
     plt.figure(figsize=(6,4))
-    plt.plot(cost_history, color="purple")
+    plt.plot(cost_history[50:], color="purple")
     plt.title("Cost vs Iteration")
     plt.xlabel("Iteration")
     plt.ylabel("Cost J(w,b)")
