@@ -1,15 +1,18 @@
 # Linear Regression Intro (Python + Markdown)
 
-This mini-project introduces univariate linear regression with a concise Markdown explanation and a pure-Python demo script that generates data, runs gradient descent, and saves plots. No Jupyter required.
+This mini-project introduces univariate linear regression with a concise Markdown explanation, a pure-Python demo script, and an interactive Jupyter notebook.
 
 ## Files
 - `docs/linear_regression_intro.md` — Conceptual introduction: dataset notation, model, cost, derivatives, gradient descent.
 - `src/linear_regression_demo.py` — Standalone script: generates synthetic data, fits a line with gradient descent, and saves figures to `outputs/`.
+- `notebooks/linear_regression_demo.ipynb` — Interactive Jupyter notebook combining theory and implementation for a hands-on learning experience.
 - `outputs/` — Created at runtime with:
   - `data_scatter_fit.png`: data points and fitted line
   - `cost_history.png`: cost vs. iteration
 
 ## Quick start
+
+### Option 1: Run the standalone script
 1. (Optional) Create and activate a virtual environment
 ```bash
 python3 -m venv .venv
@@ -28,6 +31,26 @@ python src/linear_regression_demo.py
 ```
 
 You should see console output with true and learned parameters, plus PNG files saved under `outputs/`.
+
+### Option 2: Use the interactive Jupyter notebook
+1. (Optional) Create and activate a virtual environment
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+2. Install dependencies
+```bash
+python -m pip install --upgrade pip
+pip install numpy matplotlib jupyter
+```
+
+3. Launch Jupyter and open the notebook
+```bash
+jupyter notebook notebooks/linear_regression_demo.ipynb
+```
+
+The notebook combines theory with implementation, allowing you to execute code step-by-step and experiment with different parameters interactively.
 
 ## Teaching tips
 - Encourage students to derive the gradients by hand before running the code.
